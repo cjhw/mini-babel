@@ -126,9 +126,12 @@ class Printer {
       this.nextLine();
     });
   }
+  Literal(node) {
+    this.addMapping(node);
+    this.buf += node.value;
+  }
   NumericLiteral(node) {
     this.addMapping(node);
-
     this.buf += node.value;
   }
 }

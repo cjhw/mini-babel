@@ -11,6 +11,7 @@ astDefinationsMap.set("VariableDeclarator", {
   visitor: ["id", "init"],
 });
 astDefinationsMap.set("Identifier", {});
+astDefinationsMap.set("Literal", {});
 astDefinationsMap.set("NumericLiteral", {});
 astDefinationsMap.set("FunctionDeclaration", {
   visitor: ["id", "params", "body"],

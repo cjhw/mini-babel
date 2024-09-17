@@ -1,8 +1,8 @@
 import * as acorn from "acorn";
 
 const syntaxPlugins = {
-  literal: await import("./plugins/literal.js"),
-  guangKeyword: await import("./plugins/guangKeyword.js"),
+  literal: await import("./plugins/literal.js").default,
+  guangKeyword: await import("./plugins/guangKeyword.js").deafult,
 };
 
 const defaultOptions = {
@@ -21,4 +21,6 @@ function parse(code, options) {
   });
 }
 
-export default parse;
+export default {
+  parse,
+};

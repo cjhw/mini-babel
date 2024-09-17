@@ -39,12 +39,10 @@ if (cliOpts.watch) {
     compile([path]);
   });
 }
-
 const filenames = glob.sync(commander.args[0]);
 
 const explorerSync = cosmiconfigSync("myBabel");
 const searchResult = explorerSync.search();
-console.log(searchResult);
 
 const options = {
   babelOptions: searchResult.config,

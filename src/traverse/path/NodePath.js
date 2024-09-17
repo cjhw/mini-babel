@@ -1,9 +1,9 @@
-import types from "../../types";
-import Scope from "./Scope";
-import traverse from "../index";
-import generate from "../../generate";
+import types from "../../types/index.js";
+import Scope from "./Scope.js";
+import traverse from "../index.js";
+import generate from "../../generator/index.js";
 
-module.exports = class NodePath {
+export default class NodePath {
   constructor(node, parent, parentPath, key, listKey) {
     this.node = node;
     this.parent = parent;
@@ -86,4 +86,4 @@ module.exports = class NodePath {
   toString() {
     return generate(this.node).code;
   }
-};
+}

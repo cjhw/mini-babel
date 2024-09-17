@@ -1,5 +1,5 @@
 import types from "../types/index.js";
-
+import NodePath from "./path/NodePath.js";
 const { visitorKeys } = types;
 
 export default function traverse(
@@ -11,6 +11,7 @@ export default function traverse(
   listKey
 ) {
   const defination = visitorKeys.get(node.type);
+
   let visitorFuncs = visitors[node.type] || {};
 
   if (typeof visitorFuncs === "function") {
