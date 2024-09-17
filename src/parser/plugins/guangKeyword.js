@@ -1,4 +1,4 @@
-import acorn, { Program } from "acorn";
+import * as acorn from "acorn";
 
 const Parser = acorn.Parser;
 const TokenType = acorn.TokenType;

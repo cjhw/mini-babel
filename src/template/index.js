@@ -1,4 +1,4 @@
-import parser from "../parser";
+import parser from "../parser/index.js";
 
 function template(code) {
   return parser.parse(code, {

@@ -1,7 +1,7 @@
-import parser from "../parser";
-import traverse from "../traverse";
-import generate from "../generator";
-import template from "../template";
+import parser from "../parser/index.js";
+import traverse from "../traverse/index.js";
+import generate from "../generator/index.js";
+import template from "../template/index.js";
 
 function transformSync(code, options) {
   const ast = parser.parse(code, options.parserOpts);
@@ -28,4 +28,4 @@ function transformSync(code, options) {
   return generate(ast, code, options.fileName);
 }
 
-export { transformSync };
+export default { transformSync };

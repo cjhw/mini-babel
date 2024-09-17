@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
+  "bin": {
+    "my-babel": "./src/cli/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +15,10 @@
   "license": "ISC",
   "dependencies": {
     "acorn": "^8.12.1",
+    "chokidar": "^4.0.0",
+    "commander": "^12.1.0",
+    "cosmiconfig": "^9.0.0",
+    "glob": "^11.0.0",
     "source-map": "^0.7.4"
   }
 }

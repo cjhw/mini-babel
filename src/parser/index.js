@@ -1,9 +1,8 @@
-import acorn from "acorn";
-import { Parser as ParserType } from "acorn";
+import * as acorn from "acorn";
 
 const syntaxPlugins = {
-  literal: await import("./plugins/literal"),
-  guangKeyword: await import("./plugins/guangKeyword"),
+  literal: await import("./plugins/literal.js"),
+  guangKeyword: await import("./plugins/guangKeyword.js"),
 };
 
 const defaultOptions = {
