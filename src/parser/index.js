@@ -22,4 +22,4 @@ function parse(code, options) {
   });
 }
 
-export { parse };
+export default parse;

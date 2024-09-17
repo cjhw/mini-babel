@@ -149,4 +149,4 @@ function generate(node, source, fileName) {
   return new Generator(source, fileName).generate(node);
 }
 
-module.exports = generate;
+export default generate;
